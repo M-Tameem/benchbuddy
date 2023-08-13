@@ -1,0 +1,9 @@
+scipy==1.11.1
+streamlit==1.25.0
+pandas==2.0.3
+sklearn==0.0.post7
+slack-sdk==3.21.3
+sentence-transformers==2.2.2
+textblob==0.17.1
+transformers==4.31.0
+torch==2.0.1
