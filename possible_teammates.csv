@@ -1,0 +1,40 @@
+User ID,User Name,Messages,Similarity
+U000,User_0,Hello! I'm User_0. I graduated from Cambridge with a major in Biochemistry. I've led projects at Adobe focusing on UX/UI Design.,0.4319353
+U001,User_1,My name is User_1. I have a degree in Chemistry. I've worked at Google for 10 years. My expertise is in Web Development.,0.31700474
+U004,User_4,"Hey, I'm User_4. My academic journey includes a PhD in Linguistics from UC Berkeley. My professional path led me to Nikon, diving deep into Online Collaborations.",0.41258317
+U005,User_5,Hello! I'm User_5. I graduated from Stanford with a major in Mechanical Engineering. I've led projects at Nvidia focusing on Optimization.,0.4175235
+U008,User_8,"Hi there, I am User_8. I pursued my Masters in Economics from Princeton. I have been a part of IBM where I was involved in IoT projects.",0.3289652
+U009,User_9,Hello! I'm User_9. I graduated from Oxford with a major in Software Engineering. I've led projects at Nvidia focusing on Database Management.,0.4149997
+U010,User_10,Hello! I'm User_10. I graduated from Stanford with a major in Physics. I've led projects at Salesforce focusing on Database Management.,0.41019
+U011,User_11,My name is User_11. I have a degree in Data Science. I've worked at Facebook for 2 years. My expertise is in Quantum Computing.,0.30404776
+U012,User_12,"Hey, I'm User_12. My academic journey includes a PhD in Political Science from UC Berkeley. My professional path led me to Spotify, diving deep into Media Production.",0.41528028
+U013,User_13,"Greetings! My name is User_13. With a background in Environmental Science, I've been with Lyft for the past 9 years, predominantly working on Deep Learning.",0.32759804
+U014,User_14,Hello! I'm User_14. I graduated from Harvard with a major in Mechanical Engineering. I've led projects at Netflix focusing on Neural Networks.,0.3711388
+U017,User_17,"Hey, I'm User_17. My academic journey includes a PhD in History from UC Berkeley. My professional path led me to Spotify, diving deep into Branding.",0.3742354
+U018,User_18,Hello! I'm User_18. I graduated from Stanford with a major in Software Engineering. I've led projects at Salesforce focusing on Optimization.,0.41725174
+U019,User_19,"Greetings! My name is User_19. With a background in Nanotechnology, I've been with Snapchat for the past 7 years, predominantly working on Green Energy Solutions.",0.31557262
+U020,User_20,"Hey, I'm User_20. My academic journey includes a PhD in Linguistics from UCLA. My professional path led me to Disney, diving deep into Branding.",0.3646434
+U021,User_21,"Hey, I'm User_21. My academic journey includes a PhD in Political Science from NYU. My professional path led me to Spotify, diving deep into Branding.",0.36844492
+U022,User_22,Hello! I'm User_22. I graduated from Harvard with a major in Biochemistry. I've led projects at Oracle focusing on Database Management.,0.38403314
+U023,User_23,"Hey, I'm User_23. My academic journey includes a PhD in Geography from UCLA. My professional path led me to Disney, diving deep into Audio Signal Processing.",0.39774314
+U025,User_25,"Hi there, I am User_25. I pursued my Masters in Cybersecurity from Yale. I have been a part of IBM where I was involved in IoT projects.",0.4050874
+U026,User_26,Hello! I'm User_26. I graduated from Harvard with a major in Mechanical Engineering. I've led projects at Netflix focusing on UX/UI Design.,0.36112082
+U027,User_27,"Hi there, I am User_27. I pursued my Masters in Genetics from Yale. I have been a part of Tesla where I was involved in Quantitative Analysis projects.",0.3870167
+U028,User_28,"Hi there, I am User_28. I pursued my Masters in Cybersecurity from Yale. I have been a part of Twitter where I was involved in Blockchain projects.",0.3898489
+U029,User_29,My name is User_29. I have a degree in Chemistry. I've worked at Google for 6 years. My expertise is in Quantum Computing.,0.33840778
+U030,User_30,"Hi there, I am User_30. I pursued my Masters in Robotics from Yale. I have been a part of Intel where I was involved in Quantitative Analysis projects.",0.39227688
+U031,User_31,"Hi there, I am User_31. I pursued my Masters in Genetics from Yale. I have been a part of Tesla where I was involved in VR/AR projects.",0.4178823
+U032,User_32,My name is User_32. I have a degree in Biology. I've worked at Google for 4 years. My expertise is in Quantum Computing.,0.35899836
+U033,User_33,Hello! I'm User_33. I graduated from Harvard with a major in Mathematics. I've led projects at Adobe focusing on UX/UI Design.,0.36538675
+U034,User_34,My name is User_34. I have a degree in Chemistry. I've worked at Apple for 6 years. My expertise is in Cloud Computing.,0.35193402
+U035,User_35,"Hi there, I am User_35. I pursued my Masters in Cybersecurity from Cornell. I have been a part of IBM where I was involved in Embedded Systems projects.",0.440664
+U036,User_36,My name is User_36. I have a degree in Biology. I've worked at Facebook for 4 years. My expertise is in Web Development.,0.31263775
+U037,User_37,"Hi there, I am User_37. I pursued my Masters in Robotics from Yale. I have been a part of Intel where I was involved in Blockchain projects.",0.39797682
+U039,User_39,Hello! I'm User_39. I graduated from Stanford with a major in Mathematics. I've led projects at Netflix focusing on UX/UI Design.,0.37514907
+U043,User_43,Hello! I'm User_43. I graduated from Harvard with a major in Physics. I've led projects at Netflix focusing on UX/UI Design.,0.35904902
+U044,User_44,"Hey, I'm User_44. My academic journey includes a PhD in Geography from Duke. My professional path led me to Nikon, diving deep into Media Production.",0.41405624
+U045,User_45,"Hey, I'm User_45. My academic journey includes a PhD in Political Science from Duke. My professional path led me to Disney, diving deep into Consumer Behavior.",0.34270948
+U046,User_46,Hello! I'm User_46. I graduated from Oxford with a major in Mechanical Engineering. I've led projects at Netflix focusing on Optimization.,0.36292443
+U047,User_47,Hello! I'm User_47. I graduated from Cambridge with a major in Biochemistry. I've led projects at Oracle focusing on Mobile App Development.,0.4066767
+U048,User_48,"Hi there, I am User_48. I pursued my Masters in Cybersecurity from Columbia. I have been a part of IBM where I was involved in VR/AR projects.",0.4634723
+U049,User_49,Hello! I'm User_49. I graduated from Harvard with a major in Mathematics. I've led projects at Salesforce focusing on Neural Networks.,0.38764602
