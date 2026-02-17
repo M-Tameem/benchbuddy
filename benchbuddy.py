@@ -15,8 +15,8 @@ import shutil
 
 def load_fake_data():
     try:
-        shutil.copy2('fake_introduction_messages_v2.csv', 'slack_introductions.csv')
-        shutil.copy2('fake_slack_messages_v2.csv', 'slack_messages.csv')
+        shutil.copy2('data/sample_introductions.csv', 'data/slack_introductions.csv')
+        shutil.copy2('data/sample_messages.csv', 'data/slack_messages.csv')
         return True
     except Exception as e:
         print(f"Error loading fake data: {e}")
@@ -53,7 +53,7 @@ def fetch_introduction_messages(token, channel_name='introductions'):
 
 def save_introduction_messages(token):
     messages = fetch_introduction_messages(token)
-    with open("slack_introductions.csv", "w", newline='', encoding='utf-8') as file:
+    with open("data/slack_introductions.csv", "w", newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(["User ID", "User Name", "Messages"])
         writer.writerows(messages)
@@ -65,7 +65,7 @@ def clean_message_text(text):
     cleaned_text = re.sub(r'<[^>]+>', '', cleaned_text)
     return cleaned_text.strip()
 
-def load_user_messages(filename="slack_messages.csv"):
+def load_user_messages(filename="data/slack_messages.csv"):
     user_messages = defaultdict(list)
     with open(filename, 'r') as file:
         reader = csv.reader(file)
@@ -106,7 +106,7 @@ def fetch_channels_for_user(user_id, token):
 
 def fetch_slack_data(token):
     users = fetch_all_users(token)
-    with open("slack_messages.csv", "w", newline='', encoding='utf-8') as file:
+    with open("data/slack_messages.csv", "w", newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(["User ID", "User Name", "Messages"])
         all_messages = []
@@ -120,7 +120,7 @@ def fetch_slack_data(token):
             writer.writerow([user_id, user_name, " ".join(all_messages)])
 
 def get_team_recommendation(number_of_teammates):
-    df = pd.read_csv('output_trait_scores.csv')
+    df = pd.read_csv('data/output_trait_scores.csv')
     X = df.drop(['user_id'], axis=1)
     scaler = MinMaxScaler()
     X_scaled = scaler.fit_transform(X)
@@ -164,11 +164,11 @@ def main():
         st.write("Developed by Muhammad-Tameem Mughal")
         # Display slack_introductions and slack_messages CSVs with beta_expander
         with st.expander("Slack Introductions CSV"):
-            introductions_df = pd.read_csv("slack_introductions.csv")
+            introductions_df = pd.read_csv("data/slack_introductions.csv")
             st.write(introductions_df)
 
         with st.expander("Slack Messages CSV"):
-            messages_df = pd.read_csv("slack_messages.csv")
+            messages_df = pd.read_csv("data/slack_messages.csv")
             st.write(messages_df)
 
         # Input for project description and button to calculate possible teammates
@@ -179,13 +179,13 @@ def main():
 
         if st.button("Find Possible Teammates"):
             possible_teammates_df = get_bert_similarity(project_description, introductions_df)
-            possible_teammates_df.to_csv('possible_teammates.csv', index=False)
-            st.success("Filtered teammates saved to possible_teammates.csv!")
+            possible_teammates_df.to_csv('data/possible_teammates.csv', index=False)
+            st.success("Filtered teammates saved to data/possible_teammates.csv!")
 
         # Display possible_teammates CSV
         try:
             with st.expander("Possible Teammates CSV"):
-                possible_teammates = pd.read_csv("possible_teammates.csv")
+                possible_teammates = pd.read_csv("data/possible_teammates.csv")
                 st.write(possible_teammates)
         except:
             st.write("No teammates filtered yet.")
@@ -194,15 +194,15 @@ def main():
         st.subheader("Trait Scores")
         if st.button("Calculate Trait Scores"):
             trait_scores_df = get_trait_scores_from_messages_distilbert(possible_teammates)  # Use the new function
-            trait_scores_df.to_csv('output_trait_scores.csv', index=False)
+            trait_scores_df.to_csv('data/output_trait_scores.csv', index=False)
             #trait_scores_df = get_trait_scores_from_messages(possible_teammates)
-            #trait_scores_df.to_csv('output_trait_scores.csv', index=False)
-            st.success("Trait scores calculated and saved to output_trait_scores.csv!")
+            #trait_scores_df.to_csv('data/output_trait_scores.csv', index=False)
+            st.success("Trait scores calculated and saved to data/output_trait_scores.csv!")
 
         # Display output_trait_scores CSV
         try:
             with st.expander("Trait Scores CSV"):
-                trait_scores_df = pd.read_csv("output_trait_scores.csv")
+                trait_scores_df = pd.read_csv("data/output_trait_scores.csv")
                 st.write(trait_scores_df)
         except:
             st.write("No trait scores calculated yet.")
@@ -218,10 +218,10 @@ def main():
 
 
     elif menu == "View CSV Data":
-            slack_message = pd.read_csv("slack_messages.csv")
-            slack_intro = pd.read_csv("slack_introductions.csv")
-            output_trait = pd.read_csv("output_trait_scores.csv")
-            possible_team = pd.read_csv("possible_teammates.csv")
+            slack_message = pd.read_csv("data/slack_messages.csv")
+            slack_intro = pd.read_csv("data/slack_introductions.csv")
+            output_trait = pd.read_csv("data/output_trait_scores.csv")
+            possible_team = pd.read_csv("data/possible_teammates.csv")
             st.subheader("Slack Messages")
             st.write(slack_message)
             st.subheader("Slack Intros")

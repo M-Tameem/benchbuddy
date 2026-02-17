@@ -66,7 +66,7 @@ def distilbert_analyze_messages_for_trait(messages, trait):
 
 def get_trait_scores_from_messages_distilbert(possible_teammates):
     # Load the entire message history
-    slack_messages_df = pd.read_csv('slack_messages.csv')
+    slack_messages_df = pd.read_csv('data/slack_messages.csv')
 
     # Filter out messages only from possible teammates
     filtered_messages = slack_messages_df[slack_messages_df['User ID'].isin(possible_teammates['User ID'])]
@@ -90,6 +90,6 @@ def get_trait_scores_from_messages_distilbert(possible_teammates):
 
     # Save the trait scores to a CSV
     df = pd.DataFrame(trait_scores, columns=['user_id', 'participation', 'work done', 'compatibility', 'adaptibility'])
-    df.to_csv('output_trait_scores.csv', index=False)
+    df.to_csv('data/output_trait_scores.csv', index=False)
 
     return df
