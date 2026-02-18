@@ -167,6 +167,10 @@ def main():
     if menu == "Main App":
         st.subheader("An AI based team optimizaton selector for BenchSci")
         st.write("Developed by Muhammad-Tameem Mughal")
+        # Ensure slack_introductions.csv and slack_messages.csv exist (fallback to sample data)
+        if not os.path.exists(os.path.join(_DATA_DIR, 'slack_introductions.csv')):
+            load_fake_data()
+
         # Display slack_introductions and slack_messages CSVs with beta_expander
         with st.expander("Slack Introductions CSV"):
             introductions_df = pd.read_csv(os.path.join(_DATA_DIR, 'slack_introductions.csv'))
