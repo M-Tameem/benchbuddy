@@ -1,6 +1,6 @@
 # BenchBuddy
 
-**AI-powered team composition tool** — matches employees to projects using NLP and ML on Slack data.
+**AI-powered team composition tool** - matches employees to projects using NLP and ML on Slack data.
 
 Built as a prototype for BenchSci. Research from Google, Apple, and Microsoft shows personality chemistry and work ethic compatibility can increase team productivity by ~70%. BenchBuddy operationalizes that insight for project managers.
 
@@ -22,9 +22,9 @@ KMeans clustering → select team closest to global trait average
 Recommended team
 ```
 
-1. **Candidate filtering** — BERT embeds each employee's intro message and computes cosine similarity against the project description. Filters anyone below 0.3 threshold.
-2. **Trait scoring** — DistilBERT analyzes chat history and maps sentiment to four traits on a 1–9 scale.
-3. **Team selection** — KMeans clusters candidates by trait profile; selects the cluster(s) closest to the global average, then picks by Euclidean distance to centroid if trimming is needed.
+1. **Candidate filtering** - BERT embeds each employee's intro message and computes cosine similarity against the project description. Filters anyone below 0.3 threshold.
+2. **Trait scoring** - DistilBERT analyzes chat history and maps sentiment to four traits on a 1–9 scale.
+3. **Team selection** - KMeans clusters candidates by trait profile; selects the cluster(s) closest to the global average, then picks by Euclidean distance to centroid if trimming is needed.
 
 ---
 
