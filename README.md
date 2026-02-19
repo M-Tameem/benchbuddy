@@ -2,7 +2,7 @@
 
 **AI-powered team composition tool** - matches employees to projects using NLP and ML on Slack data.
 
-Built as a prototype for BenchSci. Research from Google, Apple, and Microsoft shows personality chemistry and work ethic compatibility can increase team productivity by ~70%. BenchBuddy operationalizes that insight for project managers.
+Built as a prototype for BenchSci. BenchBuddy optimizes team creation and provides insight for project managers.
 
 Test it out here! https://m-tameem-benchbuddy.streamlit.app/
 ---
