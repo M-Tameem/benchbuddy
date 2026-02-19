@@ -4,6 +4,7 @@
 
 Built as a prototype for BenchSci. Research from Google, Apple, and Microsoft shows personality chemistry and work ethic compatibility can increase team productivity by ~70%. BenchBuddy operationalizes that insight for project managers.
 
+Test it out here! https://m-tameem-benchbuddy.streamlit.app/
 ---
 
 ## How It Works
